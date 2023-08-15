@@ -46,14 +46,7 @@ formularioTurnos.addEventListener("submit",e =>{
 
     mostrarTurnos();
 
-    /*document.querySelectorAll("#botonEliminar").forEach((button) => {
-        button.addEventListener("click", (e) => {
-          const id = button.getAttribute("classList");
-          turnos = turnos.filter((turno) => turno.id !== id);
-          localStorage.setItem("turnos", turnos);
-          mostrarTurnos();
-        });
-      });*/
+    
 
     formularioTurnos.reset();
 });
@@ -89,27 +82,7 @@ function mostrarTurnos(){
         buton.innerHTML = "eliminar";
         buton.setAttribute("data-id", turno.id);
         buton.classList.add("bDelete");
-        /*document.querySelectorAll(".bDelete").forEach((button) => {
-            button.addEventListener("click", (e) => {
-              const id = button.getAttribute("data-id");
-              turnos = turnos.filter((t) => t.id !== id);
-              localStorage.setItem("turnos", JSON.stringify(turnos));
-              mostrarTurnos();
-            });
-          });*/
-           /* buton.addEventListener("click", (e) => {
-              turnos = turnos.filter((t) => t.id !== turno.id);
-              localStorage.setItem("turnos", turnos);
-            });*/
-        /*buton.onclick = () => {
-            turnos = turnos.filter((t) => t.id !== t[index].id);
-            localStorage.setItem("tareas", JSON.stringify(tareas));
-            mostrarTurnos();
-          };*/
-        /*buton.addEventListener('click',(e)=>{let tur = e.target.parentNode.parentNode;
-            tur.remove();
-            turnos = turnos.filter(turn =>turn.id !== );
-            localStorage.setItem("turnos", JSON.stringify(turnos)); });*/
+        
         boton.appendChild(buton);
         turn.appendChild(boton);
         contenedorTurnos.appendChild(turn);
