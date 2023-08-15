@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <main>
+
+            <div class="formulario">
+                <p>Configuracion de los turnos</p>
+                <form action="" id="formTurnos">
+        
+                    <label for="servicio">Ingrese servicio del turno</label>
+                    <input type="text" name="servicio" id="servicio">
+
+                    <label for="dniMedico">Ingrese dni Medico a cargo</label>
+                    <input type="text" name="dniMedico" id="dniMedico">
+
+                    <label for="fechadia">Ingrese Fecha de los turnos</label>
+                    <input type="date" name="fechadia" id="fechadia">
+                   
+                    <label for="horainicio">Ingrese hora de inicio de los turnos</label>
+                    <input type="time" name="horainicio" id="horainicio">  
+                        
+                    <label for="horafin">Ingrese hora de fin de los turnos</label>
+                    <input type="time" name="horafin" id="horafin">
+                    
+                    <label for="frecuencia">Ingrese la frecuencia de los turnos en min</label>
+                    <input type="number" name="frecuencia" id="frecuencia">
+                    
+
+                    <div class="boton">
+        
+                        <input type="submit" name="enviar" id="enviar">
+        
+                    </div>
+        
+                </form>
+    
+            </div>
+
+        <div id="contenedorTurnos">
+        
+        
+
+        </div>
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
